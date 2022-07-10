@@ -14,12 +14,10 @@
   <div layout:fragment="contents">
   <div class="container">
     <div class="card card-primary mb-3">
-          <div class="card-header">
-            <h5 class="card-title">入力フォーム</h5>
-          </div>
-        <div class="card-body">
-              <form th:method="post" th:action="@{/meetings/admin}" th:object="${meeting_info}">
-                <table class="table table-bordered">                                                                     
+            <h1>入力フォーム</h1>
+           <div class="container">
+            <form th:method="post" th:action="@{/meetings/admin}" th:object="${meeting_info}"> 
+              <table class="table table-bordered">
   <!--  入力項目 -->        
                   <thead>
                       <tr>          
@@ -115,7 +113,8 @@
                       <div class="text-danger" th:if="${#fields.hasErrors('people')}" th:errors="*{people}"></div>
                     </div>
                 </div>            
-                </td>              
+                </td>
+                
 <!-- 　備考欄入力フォーム Model名＝remarks --> 
                    <tr>
                      <th scope="row"><span class="label label-primary">任意</span><label class="col-md-4 control-label">備考欄</label></th>
@@ -128,14 +127,16 @@
                 </div>            
                  </td>
                     </tbody>
-                  </table>  
+                  </table>
+
+  
 	        	  <div class="application">
 	        		<div class="form-group row">
 	          			<div class="offset-md-2">
 	            			<button class="btn btn-primary">申請する</button>
 	            		</div>
 	          		</div>
-	          	  </div>		                
+	          	  </div>		               
             </form>
             </div>
         </div>
