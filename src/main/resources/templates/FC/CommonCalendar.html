@@ -19,7 +19,8 @@
        <h1 style="text-align:center">予約状況</h1>
   </div>
     		<div class="card-header">
-  				<h5 class="card-title">申請はこちらから→<a href="/meetings/new" class="btn btn-success float-right">利用申し込み</a></h5>
+  				<h5 class="card-title" sec:authorize="hasAuthority('USER')">申請はこちらから→<a href="/meetings/new" class="btn btn-success float-right" >利用申し込み</a></h5>
+  				<h5 class="card-title" sec:authorize="hasAuthority('ADMIN')">登録はこちらから→<a href="/meetings/admin/RequestNew" class="btn btn-success float-right" >登録</a></h5>
   			</div>
   
 	<div id='calendar'></div>
