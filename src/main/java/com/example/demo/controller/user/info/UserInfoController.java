@@ -82,7 +82,7 @@ public class UserInfoController {
 		} else {
 			userInfo.setUsername(customUserDetails.getUsername());
 			userInfoService.update(userInfo);
-			return "redirect:/announcements";
+			return "redirect:/user-info/show";
 		}
 	}
 
