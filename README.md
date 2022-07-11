@@ -1,6 +1,6 @@
 # Spring bootアプリケーション: 予約申請アプリ
 2021年12月頃からJavaの勉強をし始め、2022年4月からWebアプリケーションの制作を通してJavaのフレームワークであるSpringBootの学習していました。アプリケーションに関する機能紹介や作成に至った経緯は、下記のqiitaに限定共有記事として投稿しておりますのでご覧いただけると幸いです。
-[https://qiita.com/Hottar7991/private/5e0059fbaba523c2286a)
+https://qiita.com/Hottar7991/private/5e0059fbaba523c2286a
 
 ## 目的
 このアプリケーションを作成した目的は、Spring frameworkを構成する、いろいろなコンポーネントの流れを説明するため。
